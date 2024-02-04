@@ -5,7 +5,7 @@ import schedule from "./assets/schedulesample.png"
 
 function Schedule() { 
     return (
-        <Box alignItems = "left">
+        <Box sx = {{ borderRadius: 1, alignItems: "left"}}>
             <Typography variant = "h6">Below is testing displaying an image:</Typography>
             <img src = {schedule} alt = "Schedule" width={200} height={500}/>
         </Box>

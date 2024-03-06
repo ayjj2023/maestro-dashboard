@@ -5,6 +5,8 @@ import Schedule from './components/Schedule';
 import Targets from './components/Targets';
 import Clock from './components/Clock';
 import StatusBox from './components/StatusBox';
+import SiderealTime from './components/SiderealTime'
+import Connection from './components/Connection'
 
 import Stack from '@mui/material/Stack';
 import Box from '@mui/material/Box';
@@ -46,8 +48,14 @@ function App() {
           </LabeledBox>
         </Stack>
         <Stack direction="column" spacing={2} sx = {{width: 400, paddingX: 2, paddingY: 2}}>
-          <LabeledBox label = "Target"> 
+          <LabeledBox label = "Targets" height = {400} width = {1000}> 
             <Targets />
+          </LabeledBox>
+          <LabeledBox label = "Sederial Time">
+            <SiderealTime />
+          </LabeledBox>
+          <LabeledBox label = "Connections">
+            <Connection />
           </LabeledBox>
         </Stack>
       </Stack>
